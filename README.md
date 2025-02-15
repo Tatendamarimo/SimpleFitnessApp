@@ -1,5 +1,7 @@
 # SimpleFitnessApp
-A simple fitness tracking app developed using Kotlin. This app interacts with a PHP backend for user registration and fitness data tracking.
+A simple fitness tracking app developed using Kotlin. This app interacts with a PHP backend for user registration and fitness data tracking
+![image](https://github.com/user-attachments/assets/2e590d30-0185-4831-9f55-fb80288cb194)
+![image](https://github.com/user-attachments/assets/544460a8-57cf-4985-a859-016f153ad512)
 
 ## Features
 - User Registration
