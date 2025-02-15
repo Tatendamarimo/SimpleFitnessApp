@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textTrackingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Your Activity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Exercise Type TextView -->
+    <TextView
+        android:id="@+id/textExerciseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise Type: Running"
+        android:textSize="18sp"
+        android:layout_below="@id/textTrackingTitle"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Duration TextView -->
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration: 0:00"
+        android:textSize="18sp"
+        android:layout_below="@id/textExerciseType"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Distance TextView -->
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0 km"
+        android:textSize="18sp"
+        android:layout_below="@id/textDuration"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Start/Stop Button -->
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Tracking"
+        android:layout_below="@id/textDistance"/>
+
+    <!-- RecyclerView for Logged Exercises -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLoggedExercises"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnStartStop"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
